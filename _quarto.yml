@@ -5,8 +5,8 @@ project:
 website:
   title: "Kyle Cahitas"
   description: "Environmental Data Science | ML + GIS + Hydrology"
-  site-url: https://kylecahitas.github.io
-  repo-url: https://github.com/Yahitas/kylecahitas.github.io
+  site-url: https://yahitas.github.io
+  repo-url: https://github.com/Yahitas/yahitas.github.io
   
   navbar:
     left:
