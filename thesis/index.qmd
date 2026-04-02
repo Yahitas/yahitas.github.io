@@ -1,0 +1,113 @@
+---
+title: "Masters Thesis"
+subtitle: "California Polytechnic State University, San Luis Obispo"
+author: "Kyle Cahitas"
+date: today
+---
+
+## [Your Thesis Title Here]
+
+::: {.callout-note}
+**Status**: In progress — expected completion June 2026  
+**Advisor**: [Advisor Name] | Department of [Your Department]  
+**Program**: M.S. Environmental Science, Cal Poly SLO
+:::
+
+## Abstract
+
+*Full abstract pending. Brief description of the work:*
+
+[2–3 sentences describing what your thesis investigates, 
+the methods you're using, and the expected contribution. 
+Write this like you'd explain it to a colleague in a 
+different department.]
+
+---
+
+## Research Question
+
+[One crisp sentence. What is the central question your 
+thesis answers?]
+
+## Study Area
+
+[Brief description of your field site, watershed, or 
+spatial extent. Add a map here when ready.]
+
+---
+
+## Methods Overview
+
+[High-level description of your workflow. Bullet form is 
+fine here — this is a summary, not a methods section.]
+
+- **Data sources**: 
+- **Primary tools**: R, [packages], QGIS
+- **Analytical approach**: 
+
+---
+
+## Code Snippets
+
+*Selected analytical methods from the thesis workflow.*
+
+### [Method 1 — e.g., Data Processing]
+```{{r}}
+#| label: fig-example
+#| fig-cap: "Caption describing what this shows"
+#| echo: true
+
+# Paste a representative chunk of your actual R code here
+# Keep it to ~20-30 lines — enough to show methodology
+# without exposing your full analysis
+
+library(tidyverse)
+library(sf)
+
+# example placeholder
+# your_data |>
+#   filter(...) |>
+#   ggplot(aes(...)) +
+#   geom_...() +
+#   theme_minimal()
+```
+
+### [Method 2 — e.g., Spatial Analysis]
+```{{r}}
+#| echo: true
+
+# Second representative chunk
+# Focus on showing something visually interesting
+# or methodologically distinct from chunk 1
+```
+
+---
+
+## Preliminary Results
+
+::: {.callout-warning}
+Results are preliminary and subject to change prior to final submission.
+:::
+
+[2–3 sentences describing what you're finding so far. 
+Vague is fine — "initial results suggest X relationship 
+between Y and Z." This signals progress without oversharing 
+unpublished work.]
+
+### Key Figure
+
+[Drop your most compelling figure here when ready.
+Even a preliminary plot is better than nothing.]
+
+
+---
+
+## Related Work
+
+- [Link to any related conference poster, presentation, or preprint if applicable]
+- Thesis repository: *private until defense, available upon request*
+
+---
+
+*This page will be updated as the thesis progresses. 
+Full document available after defense — June 2026.*

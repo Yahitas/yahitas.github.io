@@ -1,0 +1,6 @@
+---
+title: "LSTM Streamflow Forecasting in Ungauged Basins"
+description: "Transfer learning approach to predict peak discharge where no gauge data exists."
+date: 2026-01-01
+categories: [hydrology, ML, Python]
+---

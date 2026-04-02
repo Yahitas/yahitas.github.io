@@ -1,0 +1,39 @@
+---
+title: "Getting USGS Streamflow Data into R in 5 Lines"
+author: "Kyle Cahitas"
+date: 2026-04-02
+categories: [R, hydrology, tutorial]
+description: "The dataRetrieval package makes NWIS access trivial. Here's the pattern I use for every watershed project."
+---
+
+## The Problem
+
+Every hydrology project starts the same way — you need streamflow 
+data, you go to the USGS NWIS website, you download a CSV manually. 
+There's a better way.
+
+## The Solution
+```{{r}}
+library(dataRetrieval)
+library(tidyverse)
+
+# Pull daily discharge for a site
+flow <- readNWISdv(
+  siteNumbers = "11143000",   # Big Sur River near Big Sur CA
+  parameterCd = "00060",      # Discharge, cubic feet per second
+  startDate = "2020-01-01",
+  endDate = "2024-12-31"
+) |>
+  renameNWISColumns()
+
+flow |>
+  ggplot(aes(x = Date, y = Flow)) +
+  geom_line(color = "#2c7bb6", linewidth = 0.4) +
+  labs(
+    title = "Big Sur River Daily Discharge",
+    y = "Discharge (cfs)", x = NULL
+  ) +
+  theme_minimal()
+```
+
+[Add your figure here once rendered]

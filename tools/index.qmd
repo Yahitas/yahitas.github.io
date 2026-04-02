@@ -1,0 +1,10 @@
+---
+title: "Tools"
+subtitle: "Scripts, workflows, and utilities for environmental data science"
+listing:
+  contents: "*.qmd"
+  type: grid
+  fields: [title, description]
+  exclude:
+    filename: "index.qmd"
+---

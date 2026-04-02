@@ -1,0 +1,21 @@
+---
+title: "Kyle Cahitas"
+subtitle: "Environmental Data Scientist | Cal Poly"
+image: assets/photos/kyle_cahitas.jpg
+about:
+  template: trestles       # Quarto's built-in bio templates: jolla, trestles, solana, marquee, broadside
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/yahitas
+    - icon: envelope
+      text: Email
+      href: mailto:kcahitas@calpoly.edu
+---
+
+MS student in Environmental Science at Cal Poly. I apply machine learning 
+and geospatial methods to watershed hydrology problems — specifically LSTM 
+streamflow forecasting and land-use change detection using satellite imagery.
+
+Current projects: predicting peak discharge in ungauged basins using 
+transfer learning, and building open tools for USGS data access.

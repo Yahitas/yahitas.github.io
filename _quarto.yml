@@ -1,0 +1,54 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Kyle Cahitas"
+  description: "Environmental Data Science | ML + GIS + Hydrology"
+  site-url: https://kylecahitas.github.io
+  repo-url: https://github.com/Yahitas/kylecahitas.github.io
+  
+  navbar:
+    left:
+      - text: Research
+        href: research/index.qmd
+      - text: Tools
+        href: tools/index.qmd
+      - text: Blog
+        href: blog/index.qmd
+      - text: Photography
+        href: photos/index.qmd
+      - text: Thesis
+        href: thesis/index.qmd
+      - text: CV
+        href: assets/docs/cv.pdf
+    right:
+      - icon: github
+        href: https://github.com/Yahitas
+      - icon: envelope
+        href: mailto:kcahitas@calpoly.edu
+  
+  page-footer:
+    center: "© 2026 Kyle Cahitas | Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-tools: true
+    highlight-style: github
+
+execute:
+  freeze: auto
+  echo: true
+  message: false
+  warning: false
+  error: true
+
+
+
