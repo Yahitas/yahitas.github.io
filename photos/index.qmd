@@ -1,12 +1,15 @@
- ---
+---
 title: "Photography"
 subtitle: "Photos of any and everything"
 ---
 
+Placeholders for now. Drop your real images into `assets/photos/` and
+swap the filenames below (jpg or png both work).
+
 ::: {layout-ncol=3}
-![Caption here](assets/photos/photo1.jpg){group="gallery"}
+![](../assets/photos/photo1.svg){group="gallery"}
 
-![Caption here](assets/photos/photo2.jpg){group="gallery"}
+![](../assets/photos/photo2.svg){group="gallery"}
 
-![Caption here](assets/photos/photo3.jpg){group="gallery"}
+![](../assets/photos/photo3.svg){group="gallery"}
 :::

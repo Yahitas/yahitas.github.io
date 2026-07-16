@@ -1,0 +1,138 @@
+/*-----------------------------------------------------------------
+  Quadrangle  —  a topographic theme for yahitas.github.io
+  Light mode. Quarto compiles this on top of Bootstrap automatically.
+
+  To re-tint the whole site, change the 6 colors in the PALETTE
+  block below. Everything else follows from them.
+
+  Two regions matter to Quarto:
+    scss:defaults  -> variables (colors, fonts). Set BEFORE Bootstrap.
+    scss:rules     -> normal CSS rules. Applied AFTER Bootstrap.
+-----------------------------------------------------------------*/
+
+/*-- scss:defaults --*/
+
+// ============ PALETTE (edit these) ============
+$paper:    #f4f2ea;   // page background  — map paper
+$ink:      #2b2a24;   // body text        — bister black
+$water:    #2e6e8e;   // accent           — links, buttons, rules
+$quad:     #6b7a4f;   // secondary        — muted quad green
+$contour:  #cfc7ad;   // hairlines / borders
+$paper-2:  #faf8f1;   // cards / raised surfaces
+
+// ============ FONTS (system fonts — nothing to download) ============
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-family-monospace:  ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+$headings-font-family:   Georgia, "Iowan Old Style", "Times New Roman", serif;
+
+// ============ Map the palette onto Bootstrap / Quarto ============
+$body-bg:           $paper;
+$body-color:        $ink;
+$link-color:        $water;
+$link-hover-color:  mix($water, black, 82%);
+$border-color:      $contour;
+
+$navbar-bg:         $paper;
+$navbar-fg:         $ink;
+
+$code-color:        mix($water, $ink, 55%);
+$code-bg:           mix($paper, $contour, 78%);
+
+
+/*-- scss:rules --*/
+
+body { -webkit-font-smoothing: antialiased; }
+
+// Headings — Georgia, tight tracking
+h1, h2, h3, h4, h5 {
+  letter-spacing: -0.01em;
+  color: $ink;
+}
+
+// Page title gets a short water-blue underline
+.quarto-title h1.title {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid $water;
+  display: inline-block;
+}
+
+// ---- Navbar: quiet map-label feel ----
+.navbar {
+  position: relative;
+  border-bottom: 1px solid $contour;
+}
+.navbar .navbar-brand {
+  font-family: $headings-font-family;
+  letter-spacing: 0.01em;
+}
+.navbar .nav-link {
+  font-family: $font-family-monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+}
+// Faint contour tick-line under the navbar. Delete this block to remove it.
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -5px;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg, $contour 0, $contour 1px, transparent 1px, transparent 7px
+  );
+  opacity: 0.5;
+}
+
+// ---- Comfortable reading width ----
+main.content { max-width: 860px; }
+
+// ---- Listing cards (Research / Tools grids) ----
+.card,
+.quarto-grid-item.card {
+  background: $paper-2;
+  border: 1px solid $contour;
+  border-radius: 3px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.card:hover,
+.quarto-grid-item.card:hover {
+  border-color: $water;
+  transform: translateY(-2px);
+}
+.card .card-title,
+.card .listing-title { font-family: $headings-font-family; }
+
+// ---- Category chips / kickers ----
+.listing-category,
+.quarto-category {
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $water;
+  border: 1px solid $contour;
+  border-radius: 2px;
+  padding: 0.05rem 0.4rem;
+}
+
+// ---- Buttons ----
+.btn-primary {
+  background: $water;
+  border-color: $water;
+}
+.btn-primary:hover {
+  background: mix($water, black, 85%);
+  border-color: mix($water, black, 85%);
+}
+
+// ---- Figure captions ----
+figure figcaption, .figure-caption {
+  font-size: 0.85em;
+  color: mix($ink, $paper, 62%);
+}
+
+// ---- Callouts + footer ----
+div.callout { border-radius: 3px; }
+.nav-footer {
+  border-top: 1px solid $contour;
+  font-size: 0.85rem;
+}

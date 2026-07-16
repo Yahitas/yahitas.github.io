@@ -2,4 +2,12 @@
 title: "About"
 ---
 
-About this site
+I am Kyle Cahitas, an environmental scientist based in San Luis Obispo,
+California. I work at the intersection of GIS, applied statistics, and machine
+learning, mostly on environmental and agricultural questions.
+
+This site collects my research projects, maps, a few tools, and occasional
+writing. It is built with [Quarto](https://quarto.org) and published through
+GitHub Pages.
+
+Reach me at [kcahitas@calpoly.edu](mailto:kcahitas@calpoly.edu).

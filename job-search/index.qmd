@@ -1,0 +1,40 @@
+---
+title: "Job Search"
+subtitle: "Where I have applied and where things stand"
+date: today
+toc: false
+---
+
+A public log of my job applications and where each one stands. I keep it here so
+collaborators, references, and recruiters can see what I am pursuing.
+
+**Status key:** Applied · Screening · Interview · Offer · Closed
+
+| Applied | Role | Organization | Location | Status |
+|---------|------|--------------|----------|--------|
+| 2026-07-11 | Natural Resources Management Specialist III | Dept. of Hawaiian Home Lands | Hilo, HI | Applied |
+| 2026-07-10 | GIS Analyst III | County of Hawai'i, Environmental Management | Hilo, HI | Applied |
+| 2026-07-10 | Environmental Health Specialist II | State of Hawai'i, Dept. of Agriculture | Hilo, HI | Screening |
+| 2026-07-06 | Data Analyst III | City of Boise | Boise, ID | Applied |
+| 2026-06-28 | Geospatial Fisheries Analyst | Lynker (NOAA NWFSC) | Seattle, WA | Applied |
+| 2026-06-28 | Fisheries Analyst | Lynker (NOAA NWFSC) | Seattle, WA | Applied |
+| 2026-06-20 | Assistant Scientist / Planner | BKF Engineers | San Luis Obispo, CA | Applied |
+| 2026-06-20 | Environmental Analyst / Associate Scientist | San Francisco Estuary Institute | Richmond, CA | Applied |
+| 2026-06-20 | GIS Analyst | FLO Analytics | Seattle, WA / Portland, OR | Applied |
+
+<!--
+HOW TO MAINTAIN (Kyle):
+- One row per application. Keep the newest at the top.
+- Post only what you are comfortable being fully public. This page is separate
+  from your private career CRM by design. Do NOT paste the CRM in wholesale;
+  copy only the entries you want public, and strip any private notes/contacts.
+- Suggested statuses: Applied, Screening, Interview, Offer, Closed.
+  "Closed" reads better publicly than "Denied" or "Rejected."
+- Want colored status pills instead of plain text? Ask and I will add them.
+
+NOTES:
+- Boise Data Analyst III: your posting file was marked sent but its pre-send
+  checklist was unchecked. Published per your call. Double-check it actually went out.
+- GIS Analyst III listed as "Applied" (MQ appeal passed). Bump to "Screening" if
+  the county has since moved it forward to the hiring department.
+-->

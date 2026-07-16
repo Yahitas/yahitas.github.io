@@ -1,0 +1,40 @@
+---
+title: "Can a DEM alone find the pour point?"
+description: "Comparing two ways to locate where a watershed drains, using nothing but a 10-meter elevation model."
+date: 2026-05-01
+categories: [hydrology, Python, GIS]
+---
+
+::: {.callout-note}
+Poster, Cal Poly CAFES Spring Student Research Symposium, May 2026. Faculty
+co-author Dr. Aakash Ahamed and student co-author Dillen Corlett. I built the
+analysis; the collaboration set the research question.
+:::
+
+## The question
+
+A watershed's pour point is the single location where all surface water in the
+basin exits. Finding it usually takes field knowledge or a known gauge. This
+project asks whether a bare 10-meter digital elevation model, with no other
+data, is enough to locate it, and how much the answer depends on the method you
+choose.
+
+## Approach
+
+Two methods run side by side on the same watershed and the same elevation model:
+
+- Geomorphon-based terrain classification
+- Conventional D8 flow-accumulation
+
+Both are implemented in Python. The comparison looks at where each method places
+the outlet and how far the two disagree, with a discussion of the uncertainty
+that disagreement implies.
+
+## Tools
+
+- 10-meter digital elevation model as the only input
+- Python, with WhiteboxTools and pysheds
+
+<!-- [VERIFY] Two titles appear in vault records: "Can a DEM Alone Find the Pour
+Point?" and "Automated Pour Point Detection from 10m DEMs." Confirm the poster's
+final title before publishing. -->

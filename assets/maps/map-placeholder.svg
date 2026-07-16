@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Placeholder map">
+  <rect width="600" height="400" fill="#f4f2ea"/>
+  <!-- contour lines -->
+  <g fill="none" stroke="#a9986f" stroke-width="1.3">
+    <path d="M-30,60 q120,-22 240,0 t240,0 t240,0" opacity="0.45"/>
+    <path d="M-30,110 q120,-22 240,0 t240,0 t240,0" opacity="0.4"/>
+    <path d="M-30,300 q120,22 240,0 t240,0 t240,0" opacity="0.4"/>
+    <path d="M-30,350 q120,22 240,0 t240,0 t240,0" opacity="0.45"/>
+  </g>
+  <!-- watershed boundary -->
+  <path d="M170,120 L300,95 L410,140 L440,240 L360,300 L230,290 L160,220 Z"
+        fill="#2e6e8e" fill-opacity="0.08" stroke="#2e6e8e" stroke-width="2" stroke-opacity="0.8"/>
+  <!-- a stream line inside -->
+  <path d="M300,95 Q310,180 340,235 T360,300" fill="none" stroke="#2e6e8e" stroke-width="1.6" stroke-opacity="0.7"/>
+  <!-- north arrow -->
+  <g transform="translate(548,42)">
+    <path d="M0,-18 L6,10 L0,3 L-6,10 Z" fill="#2b2a24"/>
+    <text x="0" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#2b2a24">N</text>
+  </g>
+  <!-- scale bar -->
+  <g transform="translate(40,362)">
+    <rect x="0" y="0" width="70" height="5" fill="#2b2a24"/>
+    <rect x="0" y="0" width="35" height="5" fill="#f4f2ea" stroke="#2b2a24" stroke-width="1"/>
+    <text x="0" y="-6" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="#7a745f">0    1 km</text>
+  </g>
+  <text x="300" y="212" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="2.5" fill="#7a745f">MAP THUMBNAIL</text>
+  <rect x="0.75" y="0.75" width="598.5" height="398.5" fill="none" stroke="#cfc7ad" stroke-width="1.5"/>
+</svg>

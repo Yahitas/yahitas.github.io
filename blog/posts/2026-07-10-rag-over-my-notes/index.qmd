@@ -1,0 +1,17 @@
+---
+title: "I Built a Search Engine for My Own Notes"
+author: "Kyle Cahitas"
+date: 2026-07-10
+categories: [AI, RAG, tools]
+description: "A few hundred research papers and a thesis worth of notes. Keyword search wasn't cutting it, so I built retrieval over the whole pile."
+---
+
+By the second year of my thesis I had a few hundred papers in my notes and no good way to find anything in them. Keyword search finds the word. It does not find the idea when I wrote it down using different words than the ones in my head that day.
+
+So I built a small retrieval system over my own notes. The idea behind RAG, retrieval-augmented generation, is simple. Before the model answers, you go fetch the most relevant chunks of your own documents and hand them over as context. The model reads your sources, not just its training data. You get answers grounded in what you actually wrote, with the source attached.
+
+The setup I landed on uses three ways to find a chunk and then combines them. Keyword search for exact terms. Vector search for meaning, so "plastic disposal" can pull up a note that says "end-of-life mulch handling." Then a re-ranking pass to sort the survivors. I run the models locally, so the notes never leave my machine.
+
+The part that surprised me: retrieval matters more than the model. A smaller local model with good chunks beats a bigger model with bad ones. Most of my time went into how the notes get split and indexed, not into the model at all.
+
+Would I trust it to write for me? No. It points me at the right three paragraphs I already wrote and forgot. That is the whole job. I still do the thinking.

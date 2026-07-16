@@ -3,8 +3,8 @@ title: "Research"
 subtitle: "Applied ML and GIS for Environmental Systems"
 listing:
   contents: "*.qmd"
-  type: grid
-  fields: [title, description, date]
+  type: default
+  fields: [title, description, date, categories]
   exclude:
     filename: "index.qmd"
 ---

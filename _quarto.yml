@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Kyle Cahitas"
-  description: "Environmental Data Science | ML + GIS + Hydrology"
+  description: "Environmental data science, GIS, and applied machine learning"
   site-url: https://yahitas.github.io
   repo-url: https://github.com/Yahitas/yahitas.github.io
   
@@ -12,8 +12,10 @@ website:
     left:
       - text: Research
         href: research/index.qmd
-      - text: Tools
-        href: tools/index.qmd
+      - text: Maps
+        href: maps/index.qmd
+      - text: Job Search
+        href: job-search/index.qmd
       - text: Blog
         href: blog/index.qmd
       - text: Photography
@@ -21,7 +23,7 @@ website:
       - text: Thesis
         href: thesis/index.qmd
       - text: CV
-        href: assets/docs/cv.pdf
+        href: cv.qmd
     right:
       - icon: github
         href: https://github.com/Yahitas
@@ -34,9 +36,9 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+      light: theme.scss   # Quadrangle — the custom topographic theme
+      dark: darkly         # clean stock dark mode (toggle in the navbar)
+    css: styles.css        # small extra tweaks live here
     toc: true
     toc-depth: 3
     code-fold: true

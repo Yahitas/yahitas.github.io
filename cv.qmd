@@ -1,0 +1,130 @@
+---
+title: "Curriculum Vitae"
+subtitle: "Kyle Cahitas"
+date: today
+toc: false
+---
+
+[Download PDF version](assets/docs/cv.pdf){.btn .btn-primary}
+
+Environmental data scientist and graduate researcher, San Luis Obispo,
+California.
+[kcahitas@calpoly.edu](mailto:kcahitas@calpoly.edu) ·
+[GitHub](https://github.com/Yahitas) ·
+[LinkedIn](https://linkedin.com/in/kylecahitas)
+
+## Education
+
+**M.S., Environmental Science and Management** — California Polytechnic State
+University, San Luis Obispo. Expected July 2026. Cumulative GPA 3.78.
+
+**B.S., Environmental Studies** — University of California, Santa Barbara. 2021
+to 2024. GPA 3.61, Dean's Honors.
+
+**Study Abroad (UCEAP), Environmental Science and Field Methods** — University
+of Waikato, Hamilton, New Zealand. 2023.
+
+## Research
+
+**Master's thesis.** Structural predictors of end-of-life agricultural-plastic
+disposal among California strawberry growers. Latent class analysis (poLCA in R)
+of a statewide mail survey. Defended July 2026.
+
+## Experience
+
+**Graduate Researcher** — Cal Poly SLO. September 2024 to July 2026.
+
+- Designed and ran latent class analysis (poLCA in R) on a statewide grower survey.
+- Built a reproducible R pipeline: data cleaning, model selection, multiple-comparison correction.
+- Built a numbers-ledger system locking every reported statistic to its source script.
+
+**Teaching Assistant, ESCI 502 (R Coding Laboratory)** — Cal Poly SLO. January
+to March 2026.
+
+- Led weekly labs on R for statistical analysis and environmental data visualization.
+- Coached students through tidyverse debugging and reproducible workflows.
+
+**GIS Consultant** — California Strawberry Commission, Watsonville, CA. July to
+December 2025.
+
+- Built an ArcGIS Pro workflow for a life cycle assessment of agricultural plastics across five California counties.
+- Ran closest-facility network analysis on field-to-facility haul distances.
+- Interviewed CalRecycle managers and visited recycling centers.
+
+**Training-Efficiency Analyst (Consultant)** — CAL FIRE, California. February
+2025.
+
+- Analyzed CAL FIRE training modules using participant survey feedback and summarized results with improvement recommendations.
+
+**Capstone Field Researcher** — University of Waikato, New Zealand. July to
+September 2023.
+
+- Collected and georeferenced vegetation data and ran water-quality assessments at five sites.
+- Ran transect-based spatial analysis of dune erosion across three monitoring sites.
+
+**Field Assistant** — Your Children's Trees, UC Santa Barbara, Goleta, CA. July
+to September 2022.
+
+- Monitored 60 coast live oaks (*Quercus agrifolia*) at a restoration site and documented establishment success.
+- Developed educational materials for local K-12 faculty.
+
+**Field Research Assistant** — Storke Ranch Vernal Pools, Goleta, CA. September
+to December 2021.
+
+- Supported restoration of a sensitive vernal-pool ecosystem: invasive removal by weeding, solarization, and machinery.
+- Seeded over 150 purple needlegrass (*Stipa pulchra*) to increase native biodiversity.
+
+**Shop Manager** — The Loft Hawaiian Restaurant, Torrance, CA. December 2017 to
+December 2021.
+
+- Managed daily operations and staffing for a 20-person front-of-house team across peak service periods.
+
+## Projects
+
+**Knowledge-distillation random forest for shrub detection** — Carrizo Plain,
+CA. Led the machine learning work on a teacher-student model that detects target
+shrubs from drone RGB imagery for restoration monitoring. Client: Sequoia
+Riverlands Trust.
+
+**Pour-point identification from a watershed DEM** — San Luis Obispo, CA.
+Compared geomorphon-based and D8 flow-accumulation methods for locating a
+watershed outlet from a 10-meter elevation model, in Python. Poster, Cal Poly
+CAFES Spring Research Symposium, 2026.
+
+**Cultural-resources predictive sensitivity model** — SLO County. Methodology
+writeup combining NHD hydrography, USGS 3DEP elevation, SSURGO soils, and
+CalVeg, with weighted-overlay and machine learning options and spatially blocked
+cross-validation.
+
+## Technical skills
+
+**R**: tidyverse, sf, terra, glm, poLCA, ggplot2.
+**Python**: rasterio, geopandas, scikit-learn, pandas, numpy.
+**GIS**: ArcGIS Pro, QGIS, weighted-overlay and multi-criteria decision
+analysis, network analysis, watershed and pour-point analysis, spatial
+cross-validation.
+**Statistics and ML**: logistic regression, latent class analysis, random
+forests, knowledge distillation, model selection and diagnostics, RAG pipelines,
+local LLM deployment (Ollama).
+**Field methods**: vegetation surveys, water-quality sampling, transect-based
+erosion monitoring.
+**Software**: RStudio, VS Code, Git and GitHub, Excel, Google Workspace, Obsidian.
+
+## Presentations
+
+Cahitas, K., and Williams, N. (2026). Beyond Beliefs: how structural factors
+shape agricultural-plastics end-of-life management among California strawberry
+growers. Oral presentation, AFHVS/ASFS Annual Meeting, Burlington, VT.
+
+Cahitas, K., and Williams, N. (2026). Beyond Beliefs. Poster, IASNR Conference,
+Corvallis, OR.
+
+Cahitas, K., and Williams, N. (2026). Beyond Beliefs. Poster, Society for
+Applied Anthropology Annual Meeting, Albuquerque, NM.
+
+<!-- [VERIFY] before shipping: (1) email choice — calpoly used here; gmail also
+on resumes. (2) GPA 3.78 / 3.61 and Dean's Honors are from the federal-master
+resume only. (3) "Expected July 2026" — conferral date not yet posted. (4) shrub
+project species/numbers conflict (see research/shrub-detection.qmd). Extra roles
+on the federal resume (CAL FIRE, UCSB field roles, restaurant shop manager) are
+now all included per your call. -->

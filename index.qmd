@@ -1,21 +1,26 @@
 ---
 title: "Kyle Cahitas"
-subtitle: "Environmental Data Scientist | Cal Poly"
+subtitle: "Environmental Data Scientist | Cal Poly SLO"
 image: assets/photos/kyle_cahitas.jpg
 about:
   template: trestles       # Quarto's built-in bio templates: jolla, trestles, solana, marquee, broadside
   links:
     - icon: github
       text: GitHub
-      href: https://github.com/yahitas
+      href: https://github.com/Yahitas
     - icon: envelope
       text: Email
       href: mailto:kcahitas@calpoly.edu
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/kylecahitas
 ---
 
-MS student in Environmental Science at Cal Poly. I apply machine learning 
-and geospatial methods to watershed hydrology problems — specifically LSTM 
-streamflow forecasting and land-use change detection using satellite imagery.
+I am an environmental scientist finishing an MS in Environmental Science and
+Management at Cal Poly San Luis Obispo. My work sits where GIS, applied
+statistics, and machine learning meet: survey-based social science, geospatial
+modeling, and applied ML for environmental monitoring.
 
-Current projects: predicting peak discharge in ungauged basins using 
-transfer learning, and building open tools for USGS data access.
+I build reproducible pipelines, in R and Python, that document every step from
+raw data to reported result. My thesis looks at the structural factors behind
+how California strawberry growers dispose of used agricultural plastic.

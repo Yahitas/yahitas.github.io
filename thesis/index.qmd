@@ -1,113 +1,89 @@
 ---
-title: "Masters Thesis"
-subtitle: "California Polytechnic State University, San Luis Obispo"
-author: "Kyle Cahitas"
+title: "Master's Thesis"
+subtitle: "Beyond Beliefs: structural determinants of agricultural-plastic end-of-life management among California strawberry growers"
 date: today
 ---
 
-## [Your Thesis Title Here]
-
 ::: {.callout-note}
-**Status**: In progress — expected completion June 2026  
-**Advisor**: [Advisor Name] | Department of [Your Department]  
-**Program**: M.S. Environmental Science, Cal Poly SLO
+**Program**: M.S. Environmental Science and Management, Cal Poly San Luis Obispo
+**Advisor**: Nick Williams
+**Status**: Defended July 2026, in post-defense revision
 :::
 
-## Abstract
+## Question
 
-*Full abstract pending. Brief description of the work:*
+What predicts how California strawberry growers dispose of used agricultural
+plastic mulch: their attitudes, their farm characteristics, or their location?
+Plastic mulch is central to strawberry production, and its end-of-life handling,
+landfill versus recycling, carries real environmental cost. Most work on grower
+behavior starts from beliefs. This thesis asks whether structure, farm and
+place, explains more than belief does.
 
-[2–3 sentences describing what your thesis investigates, 
-the methods you're using, and the expected contribution. 
-Write this like you'd explain it to a colleague in a 
-different department.]
+## Approach
 
----
+The analysis uses a statewide mail survey of California strawberry growers.
+Growers answered batteries of Likert-scale statements about plastic mulch,
+environmental concern, and where they get their information. The core of the
+work is a two-stage design: first recover the attitude types hidden in those
+answers, then test whether type, farm, or place predicts what growers actually
+do with their used plastic.
 
-## Research Question
+## Latent class analysis: finding hidden grower types
 
-[One crisp sentence. What is the central question your 
-thesis answers?]
+Latent class analysis is a way to find groups inside a population without
+deciding the groups in advance. Instead of sorting growers into categories I
+picked, the method looks at the pattern of answers across many survey questions
+and asks whether people fall into a small number of distinct response profiles.
+It treats each grower's answers as evidence of an underlying attitude type that
+you cannot observe directly, and estimates the probability that each grower
+belongs to each type. That fits the goal here. I wanted the grower typologies to
+come out of the data, not out of my own assumptions about who growers are. The
+models are fit with the poLCA package in R, a standard tool for this kind of
+categorical survey data.
 
-## Study Area
+## Choosing the number of types
 
-[Brief description of your field site, watershed, or 
-spatial extent. Add a map here when ready.]
+How many groups exist is itself a modeling decision, not something you set ahead
+of time. For each battery of questions I fit a series of candidate models,
+starting with two groups and adding one at a time. Each candidate gets scored on
+how well it fits the data against how complex it is, mainly using the Bayesian
+Information Criterion, with related measures checked alongside it so the choice
+never rests on a single number. Two things matter beyond the scores. Class
+separation asks whether each grower's answers point cleanly to one group, since a
+model can score well and still produce fuzzy, overlapping types. Interpretability
+asks whether the resulting profiles actually make sense and can be given a clear
+label. A model with a slightly better score but muddier groups does not win over
+a simpler one with clean separation.
 
----
+## From types to behavior
 
-## Methods Overview
+Once each grower has a most-likely type, that type becomes a variable in its own
+right, used the same way as acreage or years in operation. The second stage tests
+whether attitude type, farm characteristics, or growing region are associated
+with how growers dispose of their used mulch. Because many variables get tested
+against the same outcome, the analysis corrects for multiple comparisons, so a
+result has to clear a higher bar before it counts as a real pattern rather than
+noise. The payoff of the two-stage design is a sharper question: not just whether
+attitudes and behavior seem related in general, but whether a grower's specific,
+properly identified type is what drives what they do with their plastic.
 
-[High-level description of your workflow. Bullet form is 
-fine here — this is a summary, not a methods section.]
+## Tools
 
-- **Data sources**: 
-- **Primary tools**: R, [packages], QGIS
-- **Analytical approach**: 
+- **Data**: statewide mail survey of California strawberry growers
+- **Analysis**: latent class analysis (poLCA) for the typologies, then tests of
+  type, farm, and region against disposal outcomes with multiple-comparison
+  correction
+- **Pipeline**: R (tidyverse, poLCA, ggplot2), reproducible, with a numbers
+  ledger locking each reported statistic to its source script
 
----
+## Related work
 
-## Code Snippets
+This thesis has been presented as work in progress at the AFHVS/ASFS Annual
+Meeting, the IASNR Conference, and the Society for Applied Anthropology Annual
+Meeting in 2026.
 
-*Selected analytical methods from the thesis workflow.*
+*The full document will be available after final submission.*
 
-### [Method 1 — e.g., Data Processing]
-```{{r}}
-#| label: fig-example
-#| fig-cap: "Caption describing what this shows"
-#| echo: true
-
-# Paste a representative chunk of your actual R code here
-# Keep it to ~20-30 lines — enough to show methodology
-# without exposing your full analysis
-
-library(tidyverse)
-library(sf)
-
-# example placeholder
-# your_data |>
-#   filter(...) |>
-#   ggplot(aes(...)) +
-#   geom_...() +
-#   theme_minimal()
-```
-
-### [Method 2 — e.g., Spatial Analysis]
-```{{r}}
-#| echo: true
-
-# Second representative chunk
-# Focus on showing something visually interesting
-# or methodologically distinct from chunk 1
-```
-
----
-
-## Preliminary Results
-
-::: {.callout-warning}
-Results are preliminary and subject to change prior to final submission.
-:::
-
-[2–3 sentences describing what you're finding so far. 
-Vague is fine — "initial results suggest X relationship 
-between Y and Z." This signals progress without oversharing 
-unpublished work.]
-
-### Key Figure
-
-[Drop your most compelling figure here when ready.
-Even a preliminary plot is better than nothing.]
-
-
----
-
-## Related Work
-
-- [Link to any related conference poster, presentation, or preprint if applicable]
-- Thesis repository: *private until defense, available upon request*
-
----
-
-*This page will be updated as the thesis progresses. 
-Full document available after defense — June 2026.*
+<!-- [VERIFY] Sample size omitted on purpose: vault sources conflict (126 of
+1,014 vs 121 of 800). No unpublished numeric results are shown here per the
+thesis privacy rule. Add figures only once reconciled and cleared to publish. -->

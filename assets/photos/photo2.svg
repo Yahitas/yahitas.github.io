@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Placeholder photo">
+  <rect width="600" height="400" fill="#f4f2ea"/>
+  <g fill="none" stroke="#a9986f" stroke-width="1.4">
+    <path d="M-30,55 q90,26 180,0 t180,0 t180,0 t180,0" opacity="0.5"/>
+    <path d="M-30,100 q90,26 180,0 t180,0 t180,0 t180,0" opacity="0.45"/>
+    <path d="M-30,145 q90,26 180,0 t180,0 t180,0 t180,0" opacity="0.5"/>
+    <path d="M-30,250 q90,26 180,0 t180,0 t180,0 t180,0" opacity="0.5"/>
+    <path d="M-30,295 q90,26 180,0 t180,0 t180,0 t180,0" opacity="0.45"/>
+    <path d="M-30,340 q90,26 180,0 t180,0 t180,0 t180,0" opacity="0.55"/>
+  </g>
+  <path d="M-30,200 q90,26 180,0 t180,0 t180,0 t180,0" fill="none" stroke="#6b7a4f" stroke-width="2.2" opacity="0.8"/>
+  <text x="300" y="205" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="15" letter-spacing="3" fill="#7a745f">PHOTO COMING SOON</text>
+  <rect x="0.75" y="0.75" width="598.5" height="398.5" fill="none" stroke="#cfc7ad" stroke-width="1.5"/>
+</svg>

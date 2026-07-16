@@ -1,0 +1,17 @@
+---
+title: "How I Stopped Copy-Pasting Numbers Into My Thesis"
+author: "Kyle Cahitas"
+date: 2026-05-20
+categories: [reproducibility, R, thesis]
+description: "Every statistic in my thesis lives in one file. Nothing gets typed by hand. Here is why."
+---
+
+Early on I made a mistake that a lot of people make. I ran an analysis, saw a number, and typed it into my draft. Then I re-ran the analysis two weeks later, the number changed slightly, and I updated the draft in three places. I was pretty sure I got all three. I was not certain.
+
+That uncertainty is the whole problem. Once you hand-copy a number, the draft and the code can drift apart, and you have no way to prove they still agree.
+
+So now every reported statistic in my thesis gets pulled out of the analysis script exactly once, into a single file. Call it a numbers ledger. The paper, the poster, an email to my advisor, they all point at that one file and nothing else. No number gets typed by hand anywhere downstream.
+
+When I re-run a model and a value shifts, it shifts in one place. Everything that depends on it follows. I never go hunting through the draft wondering if I caught every mention.
+
+It is a small habit and it is a little tedious to set up. It also removed a whole category of quiet error, the kind that used to keep me up before a deadline. Worth it.

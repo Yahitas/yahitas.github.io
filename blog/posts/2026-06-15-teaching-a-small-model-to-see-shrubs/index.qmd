@@ -1,0 +1,17 @@
+---
+title: "Teaching a Small Model to See Shrubs"
+author: "Kyle Cahitas"
+date: 2026-06-15
+categories: [machine learning, remote sensing]
+description: "We wanted to find shrubs in drone photos without buying an expensive sensor. The trick was letting a big model teach a small one."
+---
+
+For a restoration project on the Carrizo Plain we needed to count a target shrub across a lot of ground. Walking it was not realistic. Drone imagery was, but the cheap drones only shoot regular RGB photos. Red, green, blue. No fancy sensor bands.
+
+The problem with plain RGB is that a lot of dry vegetation looks the same to a computer. So we did something a little sneaky. We trained a big model first, and we gave it every advantage: texture features, color indices, the works. That big model got good at telling the shrub apart from everything around it.
+
+Then we used the big model as a teacher. We trained a second, smaller model to copy the teacher's answers, except the student only gets to look at RGB. This is called knowledge distillation. The student learns to mimic the teacher's judgment without needing the teacher's expensive inputs.
+
+The student ended up doing most of what the teacher could do, on imagery any consumer drone can collect. That is the point. The client does not need to buy a multispectral camera to keep monitoring the site.
+
+The honest limitation is that RGB only goes so far. When the target shrub sits next to something the same color and texture, the model still gets confused. The next version wants a near-infrared band, which separates live plants from dead ones cleanly. But for a first pass on a tight budget, letting a big model teach a small one worked better than I expected.

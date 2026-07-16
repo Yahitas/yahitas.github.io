@@ -1,0 +1,47 @@
+---
+title: "Knowledge-distillation random forest for shrub detection from drone imagery"
+description: "A teacher-student machine learning model that detects target shrubs from drone RGB imagery alone, built to support restoration monitoring on the Carrizo Plain."
+date: 2026-03-01
+categories: [machine learning, remote sensing, R]
+---
+
+::: {.callout-note}
+Course project (NR 418), winter 2026. Client: Sequoia Riverlands Trust. I led
+the geospatial and machine learning work on a six-person team.
+:::
+
+## Overview
+
+Restoration monitoring on mitigation lands in the Carrizo Plain region of
+southeastern San Luis Obispo County. The goal was to detect a target shrub
+species from low-cost drone imagery, so the client could track a restoration
+plan without expensive multispectral sensors.
+
+## Approach
+
+The model uses knowledge distillation. A larger "teacher" random forest learns
+from a rich set of engineered features: texture measures, color indices, and
+principal components. That teacher then trains a lighter "student" model that
+runs on RGB-derived features alone, with no extra sensor bands required. The
+student keeps most of the teacher's accuracy while running on imagery any
+consumer drone can collect.
+
+## Methods
+
+- Drone RGB imagery at sub-centimeter resolution
+- GLCM texture features, vegetation indices, and PCA for the teacher model
+- Random forest classification in R
+- Repeated cross-validation for model selection
+- A reduced feature set for the deployable student model
+
+## Limitation and next step
+
+RGB-only imagery was the main constraint. Adding a near-infrared band is the
+clear next improvement for separating the target shrub from spectrally similar
+vegetation.
+
+<!-- [VERIFY] Vault sources conflict on the specifics: base/federal resumes say
+target shrub, teacher 34 features / student 18 features, 94.6% teacher-student
+agreement, 88% within-polygon accuracy. The IASNR CV frames this as "saltbush,"
+a 29-layer mother model, ~96% accuracy. Reconcile species name and numbers
+before adding hard figures to this public page. -->

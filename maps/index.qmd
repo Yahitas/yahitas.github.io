@@ -1,0 +1,23 @@
+---
+title: "Maps"
+subtitle: "A running log of maps I have made"
+listing:
+  contents: "*.qmd"
+  type: grid
+  fields: [title, description, image, date]
+  sort: "date desc"
+  exclude:
+    filename: "index.qmd"
+---
+
+Cartography and spatial analysis, collected as I go. Each entry links to the map
+and a short note on how it was made.
+
+<!--
+HOW TO ADD A MAP (Kyle):
+1. Duplicate example-map.qmd in this folder and rename it, e.g. carrizo-suitability.qmd
+2. Export your map as PNG or JPG into ../assets/maps/
+3. Edit the new file's title, description, date, and image path
+The card on this page updates automatically. Delete example-map.qmd once you
+have a real one, or leave it as a template.
+-->
