@@ -10,7 +10,7 @@ about:
       href: https://github.com/Yahitas
     - icon: envelope
       text: Email
-      href: mailto:kcahitas@calpoly.edu
+      href: mailto:kyle.cahitas@gmail.com
     - icon: linkedin
       text: LinkedIn
       href: https://linkedin.com/in/kylecahitas

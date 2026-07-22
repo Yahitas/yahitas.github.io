@@ -10,4 +10,4 @@ This site collects my research projects, maps, a few tools, and occasional
 writing. It is built with [Quarto](https://quarto.org) and published through
 GitHub Pages.
 
-Reach me at [kcahitas@calpoly.edu](mailto:kcahitas@calpoly.edu).
+Reach me at [kyle.cahitas@gmail.com](mailto:kyle.cahitas@gmail.com).
