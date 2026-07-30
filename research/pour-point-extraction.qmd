@@ -34,7 +34,3 @@ that disagreement implies.
 
 - 10-meter digital elevation model as the only input
 - Python, with WhiteboxTools and pysheds
-
-<!-- [VERIFY] Two titles appear in vault records: "Can a DEM Alone Find the Pour
-Point?" and "Automated Pour Point Detection from 10m DEMs." Confirm the poster's
-final title before publishing. -->

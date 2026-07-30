@@ -9,7 +9,7 @@ toc: false
 
 Environmental data scientist and graduate researcher, San Luis Obispo,
 California.
-[kcahitas@calpoly.edu](mailto:kcahitas@calpoly.edu) ·
+[kyle.cahitas@gmail.com](mailto:kyle.cahitas@gmail.com) ·
 [GitHub](https://github.com/Yahitas) ·
 [LinkedIn](https://linkedin.com/in/kylecahitas)
 
@@ -82,8 +82,8 @@ December 2021.
 ## Projects
 
 **Knowledge-distillation random forest for shrub detection** — Carrizo Plain,
-CA. Led the machine learning work on a teacher-student model that detects target
-shrubs from drone RGB imagery for restoration monitoring. Client: Sequoia
+CA. Led the machine learning work on a teacher-student model that detects saltbush
+from drone RGB imagery for restoration monitoring. Client: Sequoia
 Riverlands Trust.
 
 **Pour-point identification from a watershed DEM** — San Luis Obispo, CA.
@@ -122,9 +122,9 @@ Corvallis, OR.
 Cahitas, K., and Williams, N. (2026). Beyond Beliefs. Poster, Society for
 Applied Anthropology Annual Meeting, Albuquerque, NM.
 
-<!-- [VERIFY] before shipping: (1) email choice — calpoly used here; gmail also
-on resumes. (2) GPA 3.78 / 3.61 and Dean's Honors are from the federal-master
-resume only. (3) "Expected July 2026" — conferral date not yet posted. (4) shrub
-project species/numbers conflict (see research/shrub-detection.qmd). Extra roles
-on the federal resume (CAL FIRE, UCSB field roles, restaurant shop manager) are
-now all included per your call. -->
+<!-- [VERIFY] before shipping: (1) email — RESOLVED to gmail 2026-07-28. (2) GPA
+3.78 / 3.61 and Dean's Honors are from the federal-master resume only. (3)
+"Expected July 2026" — conferral date not yet posted. (4) shrub project
+species/numbers conflict (see research/shrub-detection.qmd). Extra roles on the
+federal resume (CAL FIRE, UCSB field roles, restaurant shop manager) are now all
+included per your call. -->
